@@ -653,7 +653,7 @@ width: 2em;
   padding: 2em 0 4em 0;
 }
 .l-contained {
-  max-width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -726,16 +726,13 @@ padding-top: 20px;
 text-align: center;
 color: rgba(238, 238, 238, 0.40);
 }
-
-
 .timeline-list li {
 list-style-type: none;
   margin: 0 0 3em 0;
-  padding: 0 2em 0em 1em;
+  padding: 0 1em 0em 1em;
   position: relative;
 }
 .timeline-list li:before {
-
   content: "";
   position: absolute;
   top: -1em;
@@ -752,7 +749,7 @@ list-style-type: none;
   -webkit-animation: reveal 2s 0 ease both 1;
           animation: reveal 2s 0 ease both 1;
 }
-.timeline-list li .content {
+.timeline-list li .timeline-content {
   -webkit-animation: revealFromLeft 0.5s 0s ease both 1;
           animation: revealFromLeft 0.5s 0s ease both 1;
 }
@@ -760,7 +757,7 @@ list-style-type: none;
   -webkit-animation-delay: 0.85s;
           animation-delay: 0.85s;
 }
-.timeline-list li:nth-child(1) .content {
+.timeline-list li:nth-child(1) .timeline-content {
   -webkit-animation-delay: 1.05s;
           animation-delay: 1.05s;
 }
@@ -768,7 +765,7 @@ list-style-type: none;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
-.timeline-list li:nth-child(2) .content {
+.timeline-list li:nth-child(2) .timeline-content {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
@@ -776,7 +773,7 @@ list-style-type: none;
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
-.timeline-list li:nth-child(3) .content {
+.timeline-list li:nth-child(3) .timeline-content {
   -webkit-animation-delay: 2.1s;
           animation-delay: 2.1s;
 }
@@ -784,7 +781,7 @@ list-style-type: none;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.timeline-list li:nth-child(4) .content {
+.timeline-list li:nth-child(4) .timeline-content {
   -webkit-animation-delay: 2.3s;
           animation-delay: 2.3s;
 }
@@ -836,7 +833,7 @@ font-family: 'Archivo', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
     display: block;
-    text-align: center;
+    text-align: left;
     font-family: 'Raleway', sans-serif;
 }
 

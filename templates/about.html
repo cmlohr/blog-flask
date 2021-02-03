@@ -29,10 +29,20 @@
             <div class="about-p">
 <!-- work history -->
                 <div class="block-content timeline-block l-block-spacing">
-                    <img class="services-img" src="{{ url_for('static', filename='/img/fishy.jpg')}}" />
-                    <h1 class="about-top">Hi. I'm Colleen.
-                        <span class="about-top-two">A Software Engineer.</span>
-                    </h1>
+
+<div class="services-header-container">
+    <ul class="services-header-items">
+        <li class="text-header-item header-item">
+            <img class="services-img" src="{{ url_for('static', filename='/img/fishy.jpg')}}" />
+        </li>
+        <li class="header-item">
+            <h1 class="about-top">
+                Hi. I'm Colleen.
+                A Software Engineer.
+            </h1>
+        </li>
+    </ul>
+</div>
                     <div class="badge-span">
                         <ul class="stack-badge-ul">
                             <li><i class="fab fa-python"></i></li>
@@ -42,20 +52,17 @@
                             <li><i class="fab fa-css3-alt"></i></li>
                         </ul>
                     </div>
-                    <p class="about-top-sub">
+                    <p class="future-text">
                         Specifically I'm a front-end designer, developer and app builder with a passion for UX and Data.
                     </p>
 <!--            </div>-->
                     <div class="l-contained">
                             <div class="blu-hr-one"></div>
-                        <header class="about-group">
-                            <h2 class="timeline-head">
+
+                            <h2 class="services-head">
                                 My Journey
                             </h2>
-                            <p class="about-sub subtitle">
-                                Where I've been.
-                            </p>
-                        </header>
+
             <!-- work history -->
                         <ul class="timeline-list">
                             <li>
@@ -70,7 +77,7 @@
                             </li>
 
                             <li>
-                                <div class="content">
+                                <div class="timeline-content">
                                     <h3>
                                         2016-Present
                                     </h3>
@@ -105,14 +112,10 @@
                     </div>
 
 <!-- end work history -->
-            <header class="about-group">
-                <h2 class="timeline-head">
+
+                <h2 class="services-head">
                     Into The Future
                 </h2>
-                <p class="about-sub subtitle">
-                    Where I'm going.
-                </p>
-            </header>
 
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p class="future-text">
@@ -120,14 +123,11 @@
                 </p>
 
                     <div class="blu-hr-one"></div>
-                <header class="about-group">
-                    <h2 class="timeline-head">
-                        In the Life
+
+                    <h2 class="services-head">
+                       Slice of Life
                     </h2>
-                    <p class="about-sub subtitle">
-                        A snap shot of living.
-                    </p>
-                </header>
+
                 <p class="future-text">
                     Coding really is my passion.  It's what drives me when I get up everyday because it allows me to create anything and test the limits of technology.  I love how coding allows me to craft dreams into reality and approach every challenge like a puzzle to be solved.
                     <br/><br/>
@@ -195,10 +195,7 @@
             </div>
             </div>
             </div>
-
 </section>
-
-
 <script type="module" src="{{ url_for('static', filename='js/cat.js')}}"></script>
 {% include "footer.html" %}
 {% endblock %}
