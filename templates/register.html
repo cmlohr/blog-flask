@@ -1,0 +1,36 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/reg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Register</h1>
+            <span class="subheading">Register to comment!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<section class="main-container">
+  <div class="contact-container"><div class="home"></div>
+  <div class="bg"></div>
+    <div class="cover"></div>
+    <div class="row">
+      <div class="blu-hr-one"><div>
+      <div class="col-lg-8 col-md-10 mx-auto">
+       <div class="login-form">
+       {{ wtf.quick_form(form, novalidate=True, extra_classes='login-reg-forms', button_map={"submit": "light"}) }}
+       </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+{% include "footer.html" %}
+{% endblock %}

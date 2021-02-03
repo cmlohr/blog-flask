@@ -1,0 +1,53 @@
+{% include "header.html" %}
+
+<link href="{{ url_for('static', filename='css/403.css')}}" rel="stylesheet">
+{% block content %}
+  <!-- Page Header -->
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/hex-main.png')}}')">
+<div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Access Forbidden</h1>
+            <span class="subheading">Sorry, you don't have permission to access this directory.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+<section class="main-container">
+  <div class="contact-container"><div class="home"></div>
+  <div class="bg"></div>
+    <div class="cover"></div>
+    <div class="row">
+<hr class="blu-hr-one">
+<!--      <div class="col-lg-8 col-md-10 mx-auto">-->
+
+<!-- coming soon -->
+<!--        <i class="lock-403 fas fa-lock"></i>-->
+          <div class="box-403">
+
+          <svg viewBox="0 0 200 50">
+
+  <symbol id="403">
+
+    <text text-anchor="middle" x="50%" y="50%" dy=".35em">{403}</text>
+  </symbol>
+  <use class="text" xlink:href="#403"></use>
+  <use class="text" xlink:href="#403"></use>
+  <use class="text" xlink:href="#403"></use>
+  <use class="text" xlink:href="#403"></use>
+  <use class="text" xlink:href="#403"></use>
+</svg>
+          </div>
+<!--  coming soon end   -->
+
+      </div>
+    </div>
+<!--  </div>-->
+</section>
+{% include "footer.html" %}
+{% endblock %}

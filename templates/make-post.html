@@ -1,0 +1,53 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+
+  <!-- Page Header -->
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/tile.jpg')}}')">
+<div class="overlay"></div>
+<div class="contact-container-header">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="page-heading">
+        <h1>Post Creator</h1>
+        <span class="subheading">Time to write something awesome!</span>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+  <!-- Main Content -->
+
+<section class="main-container">
+<div class="contact-container"><div class="home"></div>
+  <div class="bg"></div>
+    <div class="cover"></div>
+<div class="row">
+ <div class="blu-hr-one"></div>
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            {% if is_edit: %}
+            <h1 class="post-editor">Edit Post</h1>
+            {% else: %}
+            <h1 class="post-editor">New Post</h1>
+            {% endif %}
+            <span class="subheading">You're going to make a great blog post!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{ ckeditor.load() }}
+        {{ ckeditor.config(name='body') }}
+        {{ wtf.quick_form(form, novalidate=True, extra_classes='login-reg-forms', button_map={"submit": "light"}) }}
+      </div>
+    </div>
+  </div>
+</section>
+{% include "footer.html" %}
+{% endblock %}

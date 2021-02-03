@@ -1,0 +1,62 @@
+{% include "header.html" %}
+
+<link href="{{ url_for('static', filename='css/portfolio.css')}}" rel="stylesheet">
+{% block content %}
+  <!-- Page Header -->
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/hex-main.png')}}')">
+<div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Machine Learning</h1>
+            <span class="subheading">My home for machine learning and related projects.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <section class="main-container">
+	<div class="contact-container">
+		<div class="home"></div>
+		<div class="bg"></div>
+		<div class="cover"></div>
+	  	<div class="row">
+			<div class="blu-hr-one"></div>
+
+			<div class="container">
+				<div class="cards">
+					<div class="port-btn-container">
+						<ul class="port-btn-group">
+                            <li><a href="{{ url_for('web_development') }}" class="port-list-btn">Web Development</a></li>
+                            <li><a href="{{ url_for('games') }}" class="port-list-btn">Games</a></li>
+                            <li><a href="{{ url_for('crypto') }}" class="port-list-btn">Crypto</a></li>
+                            <li><a href="{{ url_for('bots') }}" class="port-list-btn">Bots</a></li>
+                            <li><a href="{{ url_for('applications') }}" class="port-list-btn">Apps</a></li>
+                            <li><a href="{{ url_for('graphic_design') }}" class="port-list-btn">Graphic Design</a></li>
+                            <li><a href="#" class="active-port-btn port-list-btn">Machine Learning</a></li>
+                            <li><a href="{{ url_for('prototypes') }}" class="port-list-btn">Prototypes</a></li>
+                        </ul>
+                    </div>
+<!-- coming soon -->
+                            <div class="coming-soon">
+                                <svg class="coming-soon-svg" viewBox="0 0 200 50">
+                                    <symbol id="coming-soon">
+                                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">{Coming Soon}</text>
+                                    </symbol>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                </svg>
+                            </div>
+<!--  coming soon end   -->
+                     </div>
+    			</div>
+			</div>
+		</div>
+</section>
+{% include "footer.html" %}
+{% endblock %}

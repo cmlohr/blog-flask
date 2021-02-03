@@ -1,0 +1,267 @@
+{% include "header.html" %}
+
+{% block content %}
+  <!-- Page Header -->
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/portfolio.jpg')}}')">
+<div class="overlay"></div>
+<div class="contact-container-header">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="page-heading">
+        <h1>Portfolio</h1>
+        <span class="subheading">A collection of ongoing and completed projects.</span>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+  <!-- Main Content -->
+
+<section class="main-container">
+<div class="contact-container"><div class="home"></div>
+  <div class="bg"></div>
+    <div class="cover"></div>
+<div class="row">
+<div class="blu-hr-one"></div>
+  <div class="port-set">
+
+      <header class="port-heading-group">
+  <h2>The Repository</h2>
+
+    <div class="port-social-icons">
+        <ul class="port-social-list">
+          <li><a href="https://github.com/cmlohr"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="https://codepen.io/cmlohr"><i class="fab fa-codepen"></i></a></li>
+        </ul>
+      </div>
+</header>
+    <div class='under-port-container'>
+    <div class='under-portfolio'>
+
+      <div class='under-items large'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/randomwalker.gif'></image>
+      </svg>
+      </div>
+
+      <div class='under-items medium'>
+         <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/javascript-rpg-final.gif'></image>
+           </svg>
+      </div>
+
+      <div class='under-items medium'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/Peek 2021-01-12 23-17.gif'></image>
+      </svg>
+      </div>
+
+      <div class='under-items tall'>
+            <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/catdir.gif'></image>
+      </svg>
+      </div>
+
+      <div class='under-items small'>
+           <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/tinderbot.gif'></image>
+      </svg>
+      </div>
+
+      <div class='under-items wide'>
+            <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/spirograph2.gif'></image>
+      </svg>
+      </div>
+
+
+      <div class='under-items wide'>
+            <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/blogplatform.gif'></image>
+      </svg>
+      </div>
+
+      <div class='under-items medium'>
+            <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' class='under-img' href='static/img/dino.gif'></image>
+      </svg>
+      </div>
+    </div>
+    </div>
+<!-- ############################################################### -->
+    <div class='port-container'>
+    <div class='items portfolio'>
+
+<!--   Web Development    -->
+      <div class='item large'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-0'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text class='svg-text big-box' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('web_development') }}">
+            Web Development
+            </a>
+          </text>
+          <g clip-path='url(#clip-0)'>
+            <a class="port-link" href="{{ url_for('web_development') }}">
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/randomwalker.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+<!--  games    -->
+      <div class='item medium'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-1'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text class='svg-text' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('games') }}">
+          Games
+            </a>
+          </text>
+          <g clip-path='url(#clip-1)'>
+            <a class="port-link" href="{{ url_for('games') }}">
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/javascript-rpg-final.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+<!--crypto-->
+      <div class='item medium'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-2'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text class='svg-text' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('crypto') }}">
+            Crypto
+            </a>
+          </text>
+          <g clip-path='url(#clip-2)'>
+            <a class="port-link" href="{{ url_for('crypto') }}">
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/Peek 2021-01-12 23-17.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+<!--  mobile    -->
+      <div class='item tall'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-3'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text class='svg-text' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('applications') }}">
+            Apps
+            </a>
+          </text>
+          <g clip-path='url(#clip-3)'>
+            <a class="port-link" href="{{ url_for('applications') }}">
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/catdir.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+<!--  bots    -->
+      <div class='item small'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-4'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text class='svg-text small-box' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('bots') }}">
+            Bots
+            </a>
+          </text>
+          <g clip-path='url(#clip-4)'>
+            <a class="port-link" href="{{ url_for('bots') }}">
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/tinderbot.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+<!--  graphic design    -->
+      <div class='item wide'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-5'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text class='svg-text' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('graphic_design') }}">Graphic Design</a>
+          </text>
+          <g clip-path='url(#clip-5)'>
+            <a class="port-link" href="{{ url_for('graphic_design') }}">
+            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/spirograph2.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+<!-- Machine Learning -->
+      <div class='item wide'>
+        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-6'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text class='svg-text' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('machine_learning') }}">Machine Learning</a>
+          </text>
+          <g clip-path='url(#clip-6)'>
+            <a class="port-link" href="{{ url_for('machine_learning') }}">
+              <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/blogplatform.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+<!-- Prototypes -->
+      <div  class='item medium'>
+        <svg  preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+          <defs>
+            <clipPath id='clip-7'>
+              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+            </clipPath>
+          </defs>
+          <text  class='svg-text' dy='.3em' x='50%' y='50%'>
+            <a class="port-link" href="{{ url_for('prototypes') }}">Prototypes</a>
+          </text>
+          <g clip-path='url(#clip-7)'>
+            <a href="{{ url_for('prototypes') }}">
+              <image  height='100%' preserveAspectRatio='xMinYMin slice' width='100%' href='static/img/dino.gif'></image>
+            </a>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+<!-- end body content  -->
+</section>
+{% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,158 @@
+{% include "header.html" %}
+<link href="{{ url_for('static', filename='css/portfolio.css')}}" rel="stylesheet">
+{% block content %}
+  <!-- Page Header -->
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/hex-main.png')}}')">
+<div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Cryptocurrency</h1>
+            <span class="subheading">Non-Fungible Tokens research and development for gaming ecosystems.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+<section class="main-container">
+	<div class="contact-container">
+		<div class="home"></div>
+		<div class="bg"></div>
+		<div class="cover"></div>
+	  	<div class="row">
+			<div class="blu-hr-one"></div>
+
+	<!-- split -->
+
+			<div class="container">
+				<div class="cards">
+		 <!-- split -->
+					<div class="port-btn-container">
+						<ul class="port-btn-group">
+	<li><a href="{{ url_for('web_development') }}" class="port-list-btn">Web Development</a></li>
+	<li><a href="{{ url_for('games') }}" class="port-list-btn">Games</a></li>
+	<li><a href="#" class="active-port-btn port-list-btn">Crypto</a></li>
+	<li><a href="{{ url_for('bots') }}" class="port-list-btn">Bots</a></li>
+	<li><a href="{{ url_for('applications') }}" class="port-list-btn">Apps</a></li>
+	<li><a href="{{ url_for('graphic_design') }}" class="port-list-btn">Graphic Design</a></li>
+	<li><a href="{{ url_for('machine_learning') }}" class="port-list-btn">Machine Learning</a></li>
+	<li><a href="{{ url_for('prototypes') }}" class="port-list-btn">Prototypes</a></li>
+</ul>
+</div>
+							<div class="container">
+							<div class="cards">
+				<!--        card            -->
+								<div class="card">
+									<div class="card-header" style="background-image: url(static/img/elsif.gif);">
+										<div class="card-title">
+											<h3>Elsif NFT</h3>
+										</div>
+									</div>
+									<span class="card-summary">
+										On going research and development of Non-Fungible Tokens for unique items within the MMORPG Elsif.
+									</span>
+									<span class="icon-links">
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+		<!--									<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
+		<!--									<a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
+										</span>
+								</div>
+
+				<!--        card            -->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(/static/img/snakegamefinalfinal.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Snake</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--									Completed recreation of the classic Snake game with Python Turtle.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+<!--		&lt;!&ndash;									<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--		&lt;!&ndash;									<a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--										</span>-->
+<!--								</div>-->
+
+<!--				&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(/static/img/turtle_crossing.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Turtle Crossing</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										Completed game. A turtle take on the classic game Frogger.  Created using Python Turtle.-->
+<!--									</span>-->
+<!--										<span class="icon-links">-->
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+<!--						&lt;!&ndash;                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--										</span>-->
+<!--								</div>-->
+
+<!--				 &lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(/static/img/elsif.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Elsif</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										Currently in private development.  Elsif in its first generation will be a browser based MMORPG that utilizes elements of Three.js to bring the world to life.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--						&lt;!&ndash;                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--										</span>-->
+<!--								</div>-->
+
+<!--						&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(/static/img/dicegame.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Farkle</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										 Currently in development.  This Farkle game will feature 3d spinning dice and an active score board for one human player vrs the computer.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+<!--											<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
+<!--						&lt;!&ndash;                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--										</span>-->
+<!--								</div>-->
+
+<!--						&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(/static/img/comingsoon.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>The Game of Life</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										WIP. My take on Conway's cellular automaton Game of Life from 1970.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--						&lt;!&ndash;                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--									</span>-->
+<!--								</div>-->
+				<!--	card end	-->
+							</div>
+		<!---->
+						 </div>
+    			</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% include "footer.html" %}
+{% endblock %}

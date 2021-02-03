@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{ url_for('static', filename='img/site.webmanifest')}}">
+    <link rel="mask-icon" href="{{ url_for('static', filename='img/safari-pinned-tab.svg')}}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@100&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/card.css')}}">
+    <title>Colleen Lohr</title>
+  </head>
+  <body>
+
+  <div class="overlay-navigation">
+  <nav role="navigation">
+    <ul>
+      <li><a class="dark-bar" href="{{ url_for('get_all_posts') }}" data-content="Ruminations and curiosities.">Blog</a></li>
+      <li><a class="white-bar" href="{{ url_for('about') }}" data-content="Who am I?">About</a></li>
+      <li><a class="dark-bar" href="{{ url_for('services') }}" data-content="Lets build something!">Services</a></li>
+      <li><a class="white-bar" href="{{ url_for('portfolio') }}" data-content="Project home.">Portfolio</a></li>
+      <li><a class="dark-bar" href="{{ url_for('contact') }}" data-content="Come say hi!">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+<section class="home">
+
+  <div class="card">
+    <div class="circle">
+      <div class="open-overlay">
+      <span class="bar-top"></span>
+      <span class="bar-middle"></span>
+      <span class="bar-bottom"></span>
+    </div>
+    </div>
+  <div class="logo-circle"></div><h1 class="heading">{C}</h1>
+  <h1 class="main-heading">Colleen Lohr</h1>
+  <hr class="underline-hr">
+  <h2 class="sub-title">Software Engineer</h2>
+
+    <ul class="titles-ul">
+  <li class="titles-li"><h3 class="sub-heading-1">Web Developer</h3></li>
+  <li class="titles-li"><h3 class="sub-heading-2">Data Miner</h3></li>
+  <li class="titles-li"><h3 class="sub-heading-3">App Builder</h3></li>
+  <li class="titles-li"><h3 class="sub-heading-4">Script Writer</h3></li>
+  <li class="titles-li"><h3 class="sub-heading-5">Bot Creator</h3></li>
+    </ul>
+
+
+  <!-- <hr /> -->
+
+  <!-- icons -->
+
+  <div class="icons-container">
+        <ul class="icons">
+          <li><i class="fab fa-python"></i></li>
+          <li><i class="fab fa-bootstrap"></i></li>
+          <li><img class="flask" src="{{ url_for('static', filename='/img/flask.png')}}" alt="Flask Icon"></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3-alt"></i></li>
+        </ul>
+    </div>
+  <!-- <hr /> -->
+  </div>
+  </div>
+
+  <div class="cover"></div>
+
+
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+    <script src="https://kit.fontawesome.com/fbfd53b98e.js" crossorigin="anonymous"></script>
+
+<div class="hex-img"></div>
+<div class="bg"></div>
+
+</body>
+</html>

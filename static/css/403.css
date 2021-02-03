@@ -1,0 +1,66 @@
+
+.text {
+  fill: none;
+  font-family: 'Raleway', sans-serif;
+  stroke-width: 1;
+  stroke-dasharray: 50 230;
+  stroke-dashoffset: 4;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n+1) {
+  stroke: #F90505;
+  -webkit-animation-delay: -2.2s;
+  animation-delay: -2.2s;
+}
+.text:nth-child(5n+2) {
+  stroke: #C51A1A;
+  -webkit-animation-delay: -1.4s;
+  animation-delay: -1.4s;
+}
+.text:nth-child(5n+3) {
+  stroke: #eeeeee;
+  -webkit-animation-delay: -2.6s;
+  animation-delay: -2.6s;
+}
+.text:nth-child(5n+4) {
+  stroke: #F70202;
+  -webkit-animation-delay: -3.8s;
+  animation-delay: -3.8s;
+}
+.text:nth-child(5n+5) {
+  stroke: #BD0303;
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -300;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -300;
+  }
+}
+/* Other styles */
+
+
+svg {
+position: absolute;
+width: 100%;
+padding: 10%;
+display: flex;
+top: -10em;
+}
+/* .lock-403 {
+color: red;
+position: absolute;
+text-align: center;
+margin: auto;
+top: 3.5em;
+left: -1px;
+font-size: 4em;
+} */

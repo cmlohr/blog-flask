@@ -1,0 +1,231 @@
+{% include "header.html" %}
+
+{% block content %}
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/services.jpg')}}')">
+<div class="overlay"></div>
+    <div class="contact-container-header">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h1>
+                        My Services
+                    </h1>
+                    <span class="subheading">
+                        Let's build something!
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <!-- Main Content -->
+
+<section class="main-container">
+    <div class="contact-container">
+        <div class="home"></div>
+        <div class="bg"></div>
+        <div class="cover"></div>
+        <div class="row">
+                <div class="blu-hr-one"></div>
+                           <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
+            <div class="about-p">
+<div class="block-content timeline-block l-block-spacing">
+            <!-- body content here -->
+                        <div class="services-header-container">
+                            <ul class="services-header-items">
+                                <li class="text-header-item header-item">
+                                    <h1 class="services-top">
+                                    I'm always open to discussing your project.
+                                    </h1>
+                                </li>
+                                <li class="header-item">
+                                    <img class="services-img" src="{{ url_for('static', filename='/img/fishy.jpg')}}" />
+                                 </li>
+                            </ul>
+                        </div>
+                        <div class="badge-span">
+                        <ul class="stack-badge-ul">
+                            <li><i class="fab fa-python"></i></li>
+                            <li><i class="fab fa-bootstrap"></i></li>
+                            <li><img class="flask" src="{{ url_for('static', filename='/img/flask.png')}}" alt="Flask Icon"></li>
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                        </ul>
+                    </div>
+    <div class="blu-hr-one"></div>
+                <div class="l-contained">
+                    <h2 class="services-head">
+                                    What I Do
+                                </h2>
+                    <p class="future-text">
+                        As a full-stack developer I have a passion for creating beautiful and engaging UI on the front-end.
+                        <br /><br />
+                        On the back-end I work with Python, and the libraries Flask, SQLAlchemy, SQLite, Selenium, Pandas and any others that may be needed for building a complete project.
+                        <br /><br />
+                        Of course, every project is different with unique requirements and dependencies, no matter what your particular project is I'm certain we can build something amazing together.
+                    </p>
+
+                        <a class="cont-btn-link" href="{{ url_for('about') }}">
+                            <div class="cont-btn-container">
+                                <span class="cont-btn">More About Me</span>
+                            </div>
+                        </a>
+                    <div id="features" class="feat">
+                            <div class="blu-hr-one"></div>
+                        <div class="container text-center">
+                            <div class="row">
+                                <h2 class="services-head">
+                                    My Methods
+                                </h2>
+
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <h3>
+                                        <i class="fas fa-palette"></i>
+                                    </h3>
+                                    <h3 class="icon-text">
+                                        Design
+                                    </h3>
+                                    <p>
+                                        Every website is beautifully crafted to be unique and tailored to meet your needs and requirements.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <h3>
+                                        <i class="fas fa-laptop-code"></i>
+                                    </h3>
+                                    <h3 class="icon-text">
+                                        Clean Code
+                                    </h3>
+                                    <p>
+                                        All code is written with to the highest standard to be valid, clean and easily maintainable.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <h3>
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </h3>
+                                    <h3 class="icon-text">
+                                        Responsive
+                                    </h3>
+                                    <p>
+                                        All websites are responsive and are guaranteed to look great on any screen size.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <h3>
+                                        <i class="fas fa-headset"></i>
+                                    </h3>
+                                    <h3 class="icon-text">
+                                        Support
+                                    </h3>
+                                    <p>From design to deploy, options are available to supply technical support for all stages of your project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="blu-hr-one"></div>
+                        <h2 class="services-head">
+                            Testimonials
+                        </h2>
+                    <div id="testimonials">
+                        <div id="test-caro" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-inner">
+
+                                <!--test-->
+                                <div class="carousel-item active">
+                                    <a href="#">
+                                        <img class="test-img" src="{{ url_for('static', filename='/img/comingsoon.gif')}}" alt="Dubois PoBoy's">
+                                    </a>
+                                    <h2 class="test-text">
+                                        With Covid-19 we had to update our restaurant website for online ordering and delivery. The site Colleen built us is beautiful and helped us stay in business.  Thank you!
+                                    </h2>
+                                    <em class="test-ppl">
+                                        Mark Dubois, New Orleans
+                                    </em>
+                                </div>
+
+                                <!--test-->
+                                <div class="carousel-item">
+                                    <a href="#">
+                                        <img class="test-img" src="{{ url_for('static', filename='/img/comingsoon.gif')}}" alt="Carol's Gallery">
+                                    </a>
+                                    <h2 class="test-text">
+                                        Love the site! I needed a new portfolio for all my pieces, this worked beautifully and helped me showcase my work to new clients.
+                                    </h2>
+                                    <em class="test-ppl">
+                                        Carol Gilliberti, New Orleans
+                                    </em>
+                                </div>
+
+                                <!--test-->
+                                <div class="carousel-item">
+                                    <a href="#">
+                                        <img class="test-img" src="{{ url_for('static', filename='/img/comingsoon.gif')}}" alt="Bob Cleary's">
+                                    </a>
+                                    <h2 class="test-text">
+                                        I always wanted to start a blog but I no idea where to start, Colleen built me a site that's easy for me to manage and does everything I asked for.
+                                    </h2>
+                                    <em class="test-ppl">
+                                        Bob Cleary, New Orleans
+                                    </em>
+                                </div>
+
+                        <!--carousel control-->
+                                <a class="carousel-control-prev" href="#test-caro" role="button" data-bs-slide="prev">
+                                    <span class="arrow carousel-arrow carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#test-caro" role="button" data-bs-slide="next">
+                                    <span class="arrow carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- call to action -->
+                <div class="call-to-action">
+                    <a class="cont-btn-link" href="{{ url_for('portfolio') }}">
+                        <div class="cont-btn-container">
+                            <span class="cont-btn">
+                                My Portfolio
+                            </span>
+                        </div>
+                    </a>
+                    <div class="blob-box">
+                            <div class="blob">
+                                <div id="blob-eyes">
+                                <div class='blob-eyes'>
+                                    <div class='blob-eye'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speech-bubble">
+                        <div class="bubble-wrap">
+                            <div class="bubble-text">
+                            Have a project where you need some help? Send me a message, and
+                                <a class="msg-link" href="{{ url_for('contact') }}">let's chat</a>.
+                            </div>
+                        </div>
+                    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end body content  -->
+
+
+
+</section>
+<script type="module" src="{{ url_for('static', filename='js/smolBlob.js')}}"></script>
+{% include "footer.html" %}
+{% endblock %}
