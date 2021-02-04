@@ -33,11 +33,13 @@
               {{post.subtitle}}
             </h3>
           </a>
+          <div class="blu-hr-one"></div>
           <p class="blog-author post-meta">Posted by
             {{post.author.name}}
             on {{post.date}}
             {% if current_user.id == 1: %}
             <a class="delete-post" href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
+
             {% endif %}
           </p>
         </div>
