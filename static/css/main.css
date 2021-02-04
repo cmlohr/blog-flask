@@ -618,6 +618,13 @@ position: relative;
   border-top: .1em solid rgb(0,230,255);
   border-radius: 0;
 }
+.blu-hr-two{
+position: relative;
+  z-index: 999;
+  margin: auto;
+  border-top: .1em solid hsla(0, 0%, 50%, 0.74);
+  border-radius: 0;
+}
 /*___________________________________________________________stack badges */
 
 .stack-badge-ul {
