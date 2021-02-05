@@ -184,12 +184,10 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav ul {
   display: inline-block;
   list-style: none;
 }
-
 nav ul li {
   flex-basis: 20%;
   justify-content: center;
@@ -198,7 +196,6 @@ nav ul li {
   overflow: hidden;
   transform: translateX(-100%);
 }
-
 nav li a {
   position: relative;
   top: 46%;
