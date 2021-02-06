@@ -832,6 +832,7 @@ font-family: 'Archivo', sans-serif;
     color: #eeeeee;
     font-weight: bold;
     font-size: 2.5em;
+    width: 260px;
     display: block;
     text-align: left;
     font-family: 'Raleway', sans-serif;
@@ -892,6 +893,10 @@ color: rgba(0,230,255,.95);
 color: #eeeeee;
 }
 
+.services-header-container{
+display: flex-block;
+  width: 100%;
+}
 .services-top {
     color: #eeeeee;
     font-weight: bold;
@@ -938,10 +943,7 @@ margin-top: 1em;
 .header-item {
   display: flex-block;
 }
-.services-header-container{
-display: flex-block;
-  width: 100%;
-}
+
 .port-btn-group {
   font-size: 1em;
 }
@@ -956,35 +958,27 @@ font-size: 1rem;
 color: rgba(238, 238, 238, 0.60);
 font-family: 'Archivo', sans-serif;
 }
-.services-header-container {
-display: block;
-  margin: auto;
-  align-text: center;
-  width: 100%;
-  z-index:50;
-}
-.services-header-items {
-    right: 1em;
-    list-style: none;
-    margin: auto;
-    position: relative;
-    font-size: .9em;
-      -moz-column-count: 1;
-    -moz-column-gap: 5px;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 5px;
-    column-count: 1;
-    column-gap: 1px;
-}
-.services-head {padding: 15px; font-size: 1.5em; text-decoration: none);}
-.header-item {
-  display: block;
+.services-header-container{
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  margin: auto;
+}
+.services-header-items {
+ display: grid;
+ padding: 20px;
+ grid-template-columns: auto;
+}
+
+.header-item {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
   text-decoration: none;
-  transition: all 0.2s ease;
-  position: relative;
+  font-size: .9em;
   background-color: transparent;
   text-transform: uppercase;
   font-family: 'Archivo', sans-serif;
@@ -992,31 +986,19 @@ display: block;
   overflow: hidden;
 }
 .services-img {
-height: 280px;
-width: 280px;
+height: 260px;
+width: 260px;
 border-radius: 30px;
-
 }
 @media only screen and (min-width: 650px) {
-.header-item {
-  display: flex-block;
-}
 .services-header-container{
-display: flex-block;
-  width: 100%;
+  width: 98%;
 }
 .services-header-items {
-  display: block;
-  padding: 10px;
-     -moz-column-count: 2;
-    -moz-column-gap: 5px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 5px;
-    column-count: 2;
-    column-gap: 1px;
+grid-template-columns: auto auto;
 }
 }
-
+.services-head {padding: 15px; font-size: 1.5em; text-decoration: none);}
 /*___________________________________________port fancy grid_____*/
 .port-container {
 z-index: 5;
