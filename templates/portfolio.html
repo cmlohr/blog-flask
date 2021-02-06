@@ -1,10 +1,9 @@
 {% include "header.html" %}
-
 {% block content %}
 <!-- Page Header -->
 <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/portfolio.jpg')}}')">
     <div class="overlay"></div>
-    <div class="contact-container-header">
+    <div class="main-container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="page-heading">
@@ -23,12 +22,13 @@
         <div class="home"></div>
         <div class="bg"></div>
         <div class="cover"></div>
-        <div class="row">
+<!--        <div class="row">-->
             <div class="blu-hr-one"></div>
-            <div class="port-set">
+            <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
                 <header class="port-heading-group">
-                    <h2>The Repository</h2>
+                    <h2 class="services-head">The Repository</h2>
                     <div class="port-social-icons">
+
                         <ul class="port-social-list">
                             <li><a href="https://github.com/cmlohr"><i class="fab fa-github-square"></i></a></li>
                             <li><a href="https://codepen.io/cmlohr"><i class="fab fa-codepen"></i></a></li>
@@ -36,6 +36,8 @@
                         </ul>
                     </div>
                 </header>
+
+
                     <div class='under-port-container'>
                         <div class='under-portfolio'>
                             <div class='under-items large'>
@@ -81,6 +83,7 @@
                         </div>
                     </div>
 
+
         <!-- ###########################OVERLAY#################################### -->
                     <div class='port-container'>
                         <div class='items portfolio'>
@@ -90,7 +93,7 @@
                             <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-0'>
-                                    <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                    <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                 </clipPath>
                                 </defs>
                                 <text class='svg-text big-box' dy='.3em' x='50%' y='50%'>
@@ -111,7 +114,7 @@
                             <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-1'>
-                                        <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                     </clipPath>
                                 </defs>
                                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
@@ -132,7 +135,7 @@
                             <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-2'>
-                                        <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                     </clipPath>
                                 </defs>
                                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
@@ -153,7 +156,7 @@
                             <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-3'>
-                                        <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                     </clipPath>
                                 </defs>
                                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
@@ -174,7 +177,7 @@
                             <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-4'>
-                                        <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                     </clipPath>
                                 </defs>
                                 <text class='svg-text small-box' dy='.3em' x='50%' y='50%'>
@@ -195,7 +198,7 @@
                             <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-5'>
-                                        <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                     </clipPath>
                                 </defs>
                                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
@@ -214,7 +217,7 @@
                             <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-6'>
-                                        <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                     </clipPath>
                                 </defs>
                                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
@@ -233,7 +236,7 @@
                             <svg  preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
                                 <defs>
                                     <clipPath id='clip-7'>
-                                        <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                                        <circle class="vp" cx='0' cy='0' fill='#000' r='150px'></circle>
                                     </clipPath>
                                 </defs>
                                 <text  class='svg-text' dy='.3em' x='50%' y='50%'>
@@ -250,7 +253,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 
     <!-- end body content  -->
 </section>

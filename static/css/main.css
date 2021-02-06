@@ -26,7 +26,7 @@ body {background-color: #5FECFB;font-size: 20px;color: #212529;height: 100%;posi
 .home {z-index: -1;background-image: url('/static/img/hev.png');background-repeat: repeat-y;margin: auto;position: absolute;width: 100%;min-height:100%;height:auto;}
 /* logo in navbar */
 .logo-container {display: flex;margin: 0;}
-.circle {z-index: 1;border-radius: 50%;width: 50px;height: 50px;background: #0C1618;border: 2px solid #5FECFB;font-family: 'Raleway', sans-serif;font-size: 2.2rem;font-weight: bold;}
+.logo-circle {z-index: 1;border-radius: 50%;width: 50px;height: 50px;background: #0C1618;border: 2px solid #5FECFB;font-family: 'Raleway', sans-serif;font-size: 2.2rem;font-weight: bold;}
 .initial-container {z-index: 1; text-align: center; font-family: 'Raleway', sans-serif; font-size: 2.3rem; font-weight: bold;color: #F2F4F8;top: -.09rem;position: relative; animation: flicker 12s linear infinite;}
 .initial { text-decoration: none;}
 .logo-container:hover { animation: nav-pulse .5s infinite;}
@@ -196,17 +196,6 @@ img::-moz-selection {
 
 /* media for navbar */
 @media only screen and (min-width: 992px) {
-  #mainNav {
-    border-bottom: 1px solid transparent;
-    background: transparent;
-  }
-  #mainNav .navbar-brand {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
     color: #fff;
@@ -214,9 +203,6 @@ img::-moz-selection {
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
-}
-
-@media only screen and (min-width: 992px) {
   #mainNav {
     transition: background-color 0.2s;
     transform: translate3d(0, 0, 0);
@@ -229,9 +215,7 @@ img::-moz-selection {
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
   }
-  #mainNav.is-fixed .navbar-brand {
-    color: #212529;
-  }
+
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
   }
@@ -912,6 +896,7 @@ color: #eeeeee;
     color: #eeeeee;
     font-weight: bold;
     font-size: 2.5em;
+    width: 260px;
     display: block;
     text-align: right;
     font-family: 'Raleway', sans-serif;
@@ -1109,7 +1094,7 @@ svg {
   height: 100%;
 }
 
-circle {
+.vp {
   transform-origin: 50% 50%;
   transform: scale(0);
   transition: transform 500ms;
@@ -1132,8 +1117,6 @@ image {
   transform-origin: 50% 50%;
   transition: transform 100ms cubic-bezier(0.25, 0.46, 0.45, 0.24);
 }
-
-
 .small-box {
 font-size: 3em;
 }
@@ -1157,7 +1140,7 @@ font-size: 3em;
   grid-row: span 2;
   grid-column: span 3;
 }
-.item:hover circle {
+.item:hover .vp {
 transform: scale(5);
 }
 .item:hover image {

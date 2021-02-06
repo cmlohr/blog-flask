@@ -113,10 +113,5 @@ Item.prototype = {
     );
   });
 
-[].slice
-  .call(document.querySelectorAll("button"), 0)
-  .forEach(function (button) {
-    button.addEventListener("click", changeColor);
-  });
 
 
