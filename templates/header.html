@@ -24,63 +24,63 @@
 </head>
 
 <body>
-  <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark cust-nav">
-      <div class="container-fluid">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark cust-nav">
+    <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-  <!-- left links -->
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{{ url_for('get_all_posts') }}">Blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Members
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {% if not current_user.is_authenticated: %}
-                <li><a class="login-item dropdown-item" href="{{ url_for('login') }}">Login</a></li>
-                <li><a class="login-item dropdown-item" href="{{ url_for('register') }}">Register</a></li>
-             {% else %}
-                <li><a class="login-item dropdown-item" href="{{ url_for('logout') }}">Log Out</a></li>
-             {% endif %}
-              </ul>
-              </li>
-               <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('services') }}">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('about') }}">About</a>
-            </li>
-          <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('portfolio') }}">
-              Portfolio
-              </a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-            </li>
-          </ul>
-  <!-- end left links -->
+    <!-- left links -->
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('get_all_posts') }}">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Members
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% if not current_user.is_authenticated: %}
+                        <li><a class="login-item dropdown-item" href="{{ url_for('login') }}">Login</a></li>
+                        <li><a class="login-item dropdown-item" href="{{ url_for('register') }}">Register</a></li>
+                        {% else %}
+                        <li><a class="login-item dropdown-item" href="{{ url_for('logout') }}">Log Out</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('services') }}">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('portfolio') }}">
+                    Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                </li>
+            </ul>
+    <!-- end left links -->
         </div>
 
 <!-- logo -->
         <div class="logo-container">
-        <div class="circle">
-        <a class="navbar-brand mx-auto initial" href="{{ url_for('get_all_posts') }}">
-        <div class="initial-container">{C}</div>
-        </a>
-        </div>
+            <div class="circle">
+                <a class="navbar-brand mx-auto initial" href="{{ url_for('get_all_posts') }}">
+                    <div class="initial-container">{C}</div>
+                </a>
+            </div>
         </div>
 <!-- end logo -->
-<div class="push-btn-container">
-  <div class="push-toggle">
-    <input type="checkbox">
-    <span class="push-button"></span>
-    <span class="push-btn-label"><i class="far fa-sun"></i></span>
-  </div>
+<!--    dark mode toggle      -->
+<!--<div class="push-btn-container">-->
+<!--  <div class="push-toggle">-->
+<!--    <input type="checkbox">-->
+<!--    <span class="push-button"></span>-->
+<!--    <span class="push-btn-label"><i class="far fa-sun"></i></span>-->
+<!--  </div>-->
 
 <!-- toggle btn -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

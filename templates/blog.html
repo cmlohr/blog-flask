@@ -1,60 +1,61 @@
 {% include "header.html" %}
 {% block content %}
-  <!-- Page Header -->
- <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/hex-main.png')}}')">
-<div class="overlay"></div>
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/hex-main.png')}}')">
+    <div class="overlay"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Colleen's Blog</h1>
-            <span class="subheading">Ponderings, projects, predictions and projections.</span>
-          </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>Colleen's Blog</h1>
+                    <span class="subheading">Ponderings, projects, predictions and projections.</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </header>
+</header>
 
-  <!-- Main Content -->
+<!-- Main Content -->
 <section class="main-container">
-  <div class="contact-container"><div class="home"></div>
-  <div class="bg"></div>
-    <div class="cover"></div>
-    <div class="row">
-<div class="blu-hr-one"></div>
-      <div class="col-lg-8 col-md-10 mx-auto">
-        {% for post in all_posts %}
-        <div class="post-preview">
-          <a href="{{ url_for('show_post', post_id=post.id) }}">
-            <h2 class="blog-title post-title">
-              {{post.title}}
-            </h2>
-            <h3 class="blog-subtitle post-subtitle">
-              {{post.subtitle}}
-            </h3>
-          </a>
-                <div class="blu-hr-two"></div>
-          <p class="blog-author post-meta">Posted by
-            {{post.author.name}}
-            on {{post.date}}
+    <div class="contact-container">
+        <div class="home"></div>
+        <div class="bg"></div>
+        <div class="cover"></div>
+        <div class="row">
+            <div class="blu-hr-one"></div>
+            <div class="col-lg-8 col-md-10 mx-auto">
+<!--      blog code for cards, add img in future         -->
+                {% for post in all_posts %}
+                <div class="post-preview">
+                    <a href="{{ url_for('show_post', post_id=post.id) }}">
+                        <h2 class="blog-title post-title">
+                            {{post.title}}
+                        </h2>
+                        <h3 class="blog-subtitle post-subtitle">
+                            {{post.subtitle}}
+                        </h3>
+                    </a>
+                    <div class="blu-hr-two"></div>
+                    <p class="blog-author post-meta">Posted by
+                        {{post.author.name}}
+                        on {{post.date}}
+                        {% if current_user.id == 1: %}
+                        <a class="delete-post" href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
+                        {% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+
+
+            <!-- New Post -->
             {% if current_user.id == 1: %}
-            <a class="delete-post" href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
-
+            <div class="clearfix">
+                <a class="btn btn-light float-right" href="{{url_for('add_new_post')}}">Create New Post</a>
+            </div>
             {% endif %}
-          </p>
         </div>
-        {% endfor %}
-
-
-        <!-- New Post -->
-        {% if current_user.id == 1: %}
-        <div class="clearfix">
-          <a class="btn btn-light float-right" href="{{url_for('add_new_post')}}">Create New Post</a>
-        </div>
-        {% endif %}
-      </div>
     </div>
-  </div>
+    </div>
 </section>
 {% include "footer.html" %}
 {% endblock %}
