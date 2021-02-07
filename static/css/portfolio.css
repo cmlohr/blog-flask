@@ -1,6 +1,6 @@
 .port-icons-list {
     color: #eeeeee;
-    font-size: 3em;}
+    font-size: 2.5em;}
     .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -53,12 +53,14 @@
 }
 .card .card-header {
   position: relative;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
   height: 175px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.35);
   background-blend-mode: overlay;
   -moz-border-radius:  0px;
   -webkit-border-radius: 0px;
@@ -205,6 +207,9 @@ display: flex;
 .port-list-btn {
   padding: 20px;
 }}
+
+
+/*__________________________________________________________________________________coming soon__________*/
 .text {
   fill: none;
   font-family: 'Raleway', sans-serif;
@@ -255,3 +260,5 @@ display: flex;
 color: #eeeeee;
 background-color: rgb(0,230,255);
 }
+
+

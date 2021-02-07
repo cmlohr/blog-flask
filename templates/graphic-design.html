@@ -2,7 +2,7 @@
 <link href="{{ url_for('static', filename='css/portfolio.css')}}" rel="stylesheet">
 {% block content %}
   <!-- Page Header -->
- <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/hex-main.png')}}')">
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/gdx.jpg')}}')">
 <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -46,102 +46,102 @@
 							<div class="cards">
 				<!--        card            -->
 								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/doodle.gif);">
+									<div class="card-header" style="background-image: url('{{ url_for('static', filename='/img/gif/toast.gif')}}');">
 										<div class="card-title">
-											<h3>Doodle</h3>
+											<h3>Jumping Toast</h3>
 										</div>
 									</div>
 									<span class="card-summary">
-											Doodle is a hover responsive HTML, CSS and Javascript cartoon model of my cat by the same name.
+											Animation was created for the 2021 February CodePen 'Rise' challenge.
 									</span>
 									<span class="icon-links">
-											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-											<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>
+											<a href="https://github.com/cmlohr/Jumping_Toast"><i class="port-icons-list fab fa-github-square"></i></a>
+											<a href="https://codepen.io/cmlohr/full/mdOepbr"><i class="port-icons-list fab fa-codepen"></i></a>
 		<!--									<a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
 										</span>
 								</div>
 
 				<!--        card            -->
 								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/logo.gif);">
+									<div class="card-header" style="background-image: url('{{ url_for('static', filename='/img/gif/card.gif')}}');">
 										<div class="card-title">
-											<h3>My Logo</h3>
+											<h3>My Card</h3>
 										</div>
 									</div>
 									<span class="card-summary">
-									My logo, complete with flickering animation.
+									My business card, created with jQuery.
 									</span>
 									<span class="icon-links">
-											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-											<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>
-		<!--									<a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+<!--											<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
+											<a href="{{ url_for('card') }}"><i class="port-icons-list fas fa-desktop"></i></a></span>
 									</span>
 								</div>
 
 				<!--        card            -->
 								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">
+									<div class="card-header" style="background-image: url('{{ url_for('static', filename='/img/gif/clock.gif')}}');">
 										<div class="card-title">
 											<h3>Analogue Clock</h3>
 										</div>
 									</div>
 									<span class="card-summary">
-										Currently in development.  Pure CSS Analogue Clock.
+										Fully operational analogue clock made with CSS and Javascript.
 									</span>
 										<span class="icon-links">
-											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-						                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+						                    <a href="https://codepen.io/cmlohr/pen/JjbGXLy"><i class="port-icons-list fab fa-codepen"></i></a>
 						<!--                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
 										</span>
 								</div>
 
 				 <!--        card            -->
 								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">
+									<div class="card-header" style="background-image: url('{{ url_for('static', filename='/img/gif/hex.gif')}}');">
 										<div class="card-title">
-											<h3>Styled Grid</h3>
+											<h3>Rotating Hex</h3>
 										</div>
 									</div>
 									<span class="card-summary">
-										Built with HTML, CSS and Javascript this navigation grid has fun hover effects.
+										A study of 3d rotating hexagons created with Three.js and GSAP.
 									</span>
 									<span class="icon-links">
-						                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-						                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>
+						                    <a href="https://github.com/cmlohr/3d_Green_Glowy_Spinning_Hex_Rings"><i class="port-icons-list fab fa-github-square"></i></a>
+<!--						                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
+						                    <a href="https://mfbzu.csb.app/"><i class="port-icons-list fas fa-desktop"></i></a></span>
+										</span>
+								</div>
+
+						<!--        card            -->
+								<div class="card">
+									<div class="card-header" style="background-image: url('{{ url_for('static', filename='/img/gif/gridmorph.gif')}}');">
+										<div class="card-title">
+											<h3>Grid Study</h3>
+										</div>
+									</div>
+									<span class="card-summary">
+										Study in morphing CSS grids, built in pure CSS with animations.
+									</span>
+									<span class="icon-links">
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+											<a href="https://codepen.io/cmlohr/pen/eYBZvdK"><i class="port-icons-list fab fa-codepen"></i></a>
 						<!--                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
 										</span>
 								</div>
 
 						<!--        card            -->
 								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">
+									<div class="card-header" style="background-image: url('{{ url_for('static', filename='/img/gif/darkmode.gif')}}');">
 										<div class="card-title">
-											<h3>Landscapes</h3>
+											<h3>Neumorphism Dark Mode</h3>
 										</div>
 									</div>
 									<span class="card-summary">
-										Currently in development.  CSS landscape studies.
+										Neumorphism dark mode toggle made with Javascript.
 									</span>
 									<span class="icon-links">
-											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-											<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>
-						<!--                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
-										</span>
-								</div>
-
-						<!--        card            -->
-								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">
-										<div class="card-title">
-											<h3>Bridges</h3>
-										</div>
-									</div>
-									<span class="card-summary">
-										Currently in development.  CSS bridge studies.
-									</span>
-									<span class="icon-links">
-						                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-						                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>
+<!--						                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+						                    <a href="https://codepen.io/cmlohr/pen/MWbKEMj"><i class="port-icons-list fab fa-codepen"></i></a>
 						<!--                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
 									</span>
 								</div>

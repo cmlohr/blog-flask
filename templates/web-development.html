@@ -2,14 +2,14 @@
 <link href="{{ url_for('static', filename='css/portfolio.css')}}" rel="stylesheet">
 {% block content %}
   <!-- Page Header -->
- <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/hex-main.png')}}')">
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='/img/webdev.jpg')}}')">
 <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>Web Development</h1>
-            <span class="subheading">Ponderings, projects, predictions and projections.</span>
+            <span class="subheading">Designed and constructed.</span>
           </div>
         </div>
       </div>
@@ -43,114 +43,130 @@
 	<li><a href="{{ url_for('prototypes') }}" class="port-list-btn">Prototypes</a></li>
 </ul>
 </div>
-						<div class="container">
-							<div class="cards">
-				<!--        card            -->
-								<div class="card">
-									<div class="card-header" style="background-image: url(/static/img/comingsoon.gif);">
-										<div class="card-title">
-											<h3>Robert Cleary's Blog</h3>
-										</div>
-									</div>
-									<span class="card-summary">
-										Current client, in development.  This blog is a Python Flask App.
-									</span>
-									<span class="icon-links">
+
+					<!-- coming soon -->
+                            <div class="coming-soon">
+                                <svg class="coming-soon-svg" viewBox="0 0 200 50">
+                                    <symbol id="coming-soon">
+                                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">{Coming Soon}</text>
+                                    </symbol>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                        <use class="text" xlink:href="#coming-soon"></use>
+                                </svg>
+                            </div>
+<!--  coming soon end   -->
+
+<!--						<div class="container">-->
+<!--							<div class="cards">-->
+<!--				&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(/static/img/comingsoon.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Robert Cleary's Blog</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										Current client, in development.  This blog is a Python Flask App.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--&lt;!&ndash;											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>&ndash;&gt;-->
+<!--		&lt;!&ndash;									<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--		&lt;!&ndash;									<a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--										</span>-->
+<!--								</div>-->
+
+<!--				&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Carol's Studio</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--									Artists portfolio site. Demo available.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
 <!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
-		<!--									<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
-		<!--									<a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
-										</span>
-								</div>
+<!--		&lt;!&ndash;									<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--											<a href="#"><i class="port-icons-list fas fa-desktop"></i></a>-->
+<!--									</span>-->
 
-				<!--        card            -->
-								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">
-										<div class="card-title">
-											<h3>Carol's Studio</h3>
-										</div>
-									</div>
-									<span class="card-summary">
-									Artists portfolio site. Demo available.
-									</span>
-									<span class="icon-links">
-											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-		<!--									<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
-											<a href="#"><i class="port-icons-list fas fa-desktop"></i></a>
-									</span>
+<!--								</div>-->
 
-								</div>
+<!--				&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Dubois' PoBoys</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										Online menu and delivery website for local restaurant.  Demo available.-->
+<!--									</span>-->
+<!--										<span class="icon-links">-->
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+<!--						&lt;!&ndash;                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--						                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a>-->
+<!--										</span>-->
+<!--								</div>-->
 
-				<!--        card            -->
-								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">
-										<div class="card-title">
-											<h3>Dubois' PoBoys</h3>
-										</div>
-									</div>
-									<span class="card-summary">
-										Online menu and delivery website for local restaurant.  Demo available.
-									</span>
-										<span class="icon-links">
-											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-						<!--                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
-						                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a>
-										</span>
-								</div>
+<!--				 &lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(static/img/catdir.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Catdir</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										Tinder Clone for cats.  Demo available.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--						                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+<!--						&lt;!&ndash;                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--						                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a>-->
+<!--									</span>-->
+<!--								</div>-->
 
-				 <!--        card            -->
-								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/catdir.gif);">
-										<div class="card-title">
-											<h3>Catdir</h3>
-										</div>
-									</div>
-									<span class="card-summary">
-										Tinder Clone for cats.  Demo available.
-									</span>
-									<span class="icon-links">
-						                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-						<!--                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
-						                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a>
-									</span>
-								</div>
+<!--						&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Cheap Flights</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										 Currently in development.  Cheap flight price tracker club with paid membership tiers.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
+<!--&lt;!&ndash;											<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--										</span>-->
+<!--								</div>-->
 
-						<!--        card            -->
-								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/comingsoon.gif);">
-										<div class="card-title">
-											<h3>Cheap Flights</h3>
-										</div>
-									</div>
-									<span class="card-summary">
-										 Currently in development.  Cheap flight price tracker club with paid membership tiers.
-									</span>
-									<span class="icon-links">
-											<a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>
-<!--											<a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
-						<!--                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
-										</span>
-								</div>
+<!--						&lt;!&ndash;        card            &ndash;&gt;-->
+<!--								<div class="card">-->
+<!--									<div class="card-header" style="background-image: url(static/img/elsif.gif);">-->
+<!--										<div class="card-title">-->
+<!--											<h3>Elsif</h3>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<span class="card-summary">-->
+<!--										Currently in private development.  Elsif in its first generation will be a browser based MMORPG.-->
+<!--									</span>-->
+<!--									<span class="icon-links">-->
+<!--						&lt;!&ndash;                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>&ndash;&gt;-->
+<!--						&lt;!&ndash;                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>&ndash;&gt;-->
+<!--									</span>-->
+<!--								</div>-->
+<!-- </div>-->
+<!--							</div>-->
+		<!--	card end	-->
 
-						<!--        card            -->
-								<div class="card">
-									<div class="card-header" style="background-image: url(static/img/elsif.gif);">
-										<div class="card-title">
-											<h3>Elsif</h3>
-										</div>
-									</div>
-									<span class="card-summary">
-										Currently in private development.  Elsif in its first generation will be a browser based MMORPG.
-									</span>
-									<span class="icon-links">
-						<!--                    <a href="https://github.com/cmlohr"><i class="port-icons-list fab fa-github-square"></i></a>-->
-						<!--                    <a href="https://codepen.io/cmlohr"><i class="port-icons-list fab fa-codepen"></i></a>-->
-						<!--                    <a href="#"><i class="port-icons-list fas fa-desktop"></i></a></span>-->
-									</span>
-								</div>
-				<!--	card end	-->
-							</div>
-		<!---->
-						 </div>
     			</div>
 			</div>
 		</div>
