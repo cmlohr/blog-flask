@@ -77,25 +77,24 @@ def admin_only(f):
     return decorated_function
 
 
-# TODO: fix this 403 issue
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template('404.html'), 404
-
-
-@app.errorhandler(403)
-def page_not_found(e):
-    return render_template('403.html'), 403
-
-
-@app.errorhandler(410)
-def page_not_found(e):
-    return render_template('410.html'), 410
-
-
-@app.route('/card')
-def card():
-    return render_template("card.html", current_user=current_user)
+# @app.errorhandler(404)
+# def page_not_found(e):
+#     return render_template('404.html'), 404
+#
+#
+# @app.errorhandler(403)
+# def page_not_found(e):
+#     return render_template('403.html'), 403
+#
+#
+# @app.errorhandler(410)
+# def page_not_found(e):
+#     return render_template('410.html'), 410
+#
+#
+# @app.route('/card')
+# def card():
+#     return render_template("card.html", current_user=current_user)
 
 
 @app.route('/')
@@ -147,7 +146,6 @@ def login():
         password = form.password.data
 
         user = User.query.filter_by(email=email).first()
-        # Email doesn't exist or password incorrect.
         if not user:
             flash("That email does not exist, please try again.")
             return redirect(url_for('login'))
