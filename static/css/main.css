@@ -231,6 +231,7 @@ img::-moz-selection {
   #mainNav.is-visible {
     transform: translate3d(0, 100%, 0);
   }
+
 }
 
 header.masthead {
@@ -602,12 +603,21 @@ position: relative;
   margin: auto;
   border-top: .1em solid rgb(0,230,255);
   border-radius: 0;
+  width: 60%
 }
 .blu-hr-two{
 position: relative;
   z-index: 999;
   margin: auto;
+  width: 60%
   border-top: .1em solid hsla(0, 0%, 50%, 0.65);
+  border-radius: 0;
+}
+.blu-hr-header{
+position: relative;
+  z-index: 999;
+  margin: auto;
+    border-top: .1em solid rgb(0,230,255);
   border-radius: 0;
 }
 
@@ -697,7 +707,7 @@ padding-top: 40px;
 padding-bottom: 40px;
 }
 .future-text {
-width: 100%;
+width: 90%;
 margin: auto;
 padding-bottom: 20px;
 padding-top: 20px;
@@ -926,13 +936,28 @@ margin: auto;
 color: rgb(0,230,255);
 font-size: 2em;
 }
+.feat-box {
+display: grid;
+ grid-template-columns: auto;
+ align-objects: center;
+ justify-content: center;
+}
+.feat-grid-item {
+width: 300px;
+padding: 5%;
+}
 .icon-text {
    color: #eeeeee;
   font-weight: bold;
   text-decoration: underline rgb(0,230,255);
   font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
 }
-
+.feat-grid-item p {
+font-size: .8em;
+text-align: left;
+font-family: 'Archivo', sans-serif;
+}
 .services-header em{
 margin-top: 1em;
    color: #eeeeee;
@@ -945,6 +970,14 @@ margin-top: 1em;
 @media only screen and (min-width: 650px) {
 .header-item {
   display: flex-block;
+}
+.feat-box {
+ grid-template-columns: auto auto;
+}
+@media only screen and (min-width: 920px) {
+.feat-box {
+grid-template-columns: auto auto auto;
+}
 }
 
 .port-btn-group {
@@ -1011,6 +1044,7 @@ border-radius: 30px;
 .services-header-items {
 grid-template-columns: auto auto;
 }
+
 }
 .services-head {padding: 15px; font-size: 1.5em; text-decoration: none);}
 /*___________________________________________port fancy grid_____*/
@@ -1199,6 +1233,9 @@ width: 500px;
 }
 .port-social-list {
 margin-left: 12em;
+}
+.future-text {
+width: 80%;
 }
 }
 .port-heading-group {
