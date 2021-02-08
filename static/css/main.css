@@ -913,8 +913,9 @@ display: flex-block;
 .services-top {
     color: #eeeeee;
     font-weight: bold;
-    font-size: 2.5em;
-    width: 260px;
+    font-size: 2.3em;
+    width: 270px;
+ padding: 5%;
     display: block;
     text-align: right;
     font-family: 'Raleway', sans-serif;
@@ -937,14 +938,17 @@ color: rgb(0,230,255);
 font-size: 2em;
 }
 .feat-box {
-display: grid;
+display: flex;
+flex-wrap: wrap;
  grid-template-columns: auto;
  align-objects: center;
  justify-content: center;
 }
 .feat-grid-item {
-width: 300px;
-padding: 5%;
+margin: 10px;
+flex: 0 0 calc(5% - 20px);
+padding: 10px;
+min-width: 300px;
 }
 .icon-text {
    color: #eeeeee;
@@ -952,6 +956,21 @@ padding: 5%;
   text-decoration: underline rgb(0,230,255);
   font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
+}
+.call-to-patreon{
+color: #ffffff;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-text: center;
+margin: auto;
+text-decoration: none;
+padding-bottom: 20px;
+}
+.call-to-patreon a i:hover{
+color: rgb(0,230,255);
+margin: 0;
 }
 .feat-grid-item p {
 font-size: .8em;
@@ -971,12 +990,9 @@ margin-top: 1em;
 .header-item {
   display: flex-block;
 }
-.feat-box {
- grid-template-columns: auto auto;
-}
-@media only screen and (min-width: 920px) {
-.feat-box {
-grid-template-columns: auto auto auto;
+
+.call-to-patreon-txt{
+width: 50%;
 }
 }
 
@@ -1235,7 +1251,7 @@ width: 500px;
 margin-left: 12em;
 }
 .future-text {
-width: 80%;
+width: 60%;
 }
 }
 .port-heading-group {
