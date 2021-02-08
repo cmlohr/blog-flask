@@ -76,7 +76,7 @@ def admin_only(f):
 
     return decorated_function
 
-
+# need to fix the 400's________________________________________________________________________________
 # @app.errorhandler(404)
 # def page_not_found(e):
 #     return render_template('404.html'), 404
@@ -92,9 +92,9 @@ def admin_only(f):
 #     return render_template('410.html'), 410
 #
 #
-# @app.route('/card')
-# def card():
-#     return render_template("card.html", current_user=current_user)
+@app.route('/card')
+def card():
+    return render_template("card.html", current_user=current_user)
 
 
 @app.route('/')
