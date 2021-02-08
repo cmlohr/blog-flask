@@ -8,6 +8,9 @@
 .port-icons-list:hover {
     margin: 0;
 }
+.fa-desktop:hover {
+color: rgb(0,230,255);
+}
 .cards {
   display: -webkit-flex;
   display: flex;
