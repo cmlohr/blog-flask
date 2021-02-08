@@ -3,6 +3,7 @@
 /* animated background + hex backdrop */
 body {
 background-color: #5FECFB;
+height: 100vh;
 }
 
 .cover {
@@ -48,7 +49,7 @@ background-color: #5FECFB;
 .home {
   width: 100%;
   z-index: 1;
-  height: 100vh;
+  height: 110%;
   position: relative;
   background-image: url('/static/img/hev.png');
   background-size: cover;
@@ -57,11 +58,11 @@ background-color: #5FECFB;
 
 /* biz card with quick info */
 .card {
-  height: 350px;
-  width: 425px;
+  height: 440px;
+  width: 300px;
   position: absolute;
   border-radius: 3px;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0; left: 0.1em; right: 0; bottom: 0;
  margin: auto;
  background-color: hsla(185, 84%, 50%, 0.09);
  z-index: 4;
@@ -72,7 +73,7 @@ background-color: #5FECFB;
   color: #fff;
   postion: absolute;
   margin-top: -7.2rem;
-  margin-left: 9.7rem;
+  margin-left: 6.2rem;
   font-size: 5.5rem;
   font-family: 'Raleway', sans-serif;
   animation: flicker 10s linear infinite;
@@ -89,7 +90,7 @@ background-color: #5FECFB;
 
 .logo-circle {
   z-index: 5;
-  margin-left: 9rem;
+  margin-left: 5.5rem;
   margin-top: -3rem;
   text-align: center;
   postion: relative;
@@ -107,9 +108,10 @@ background-color: #5FECFB;
   color: #fff;
   postion: relative:
   text-decoration: underline overline wavy blue;
-  margin-top: -4rem;
+  margin-top: -3.5rem;
   margin-right: 4px;
   text-align: center;
+  line-height: 1em;
   dislplay: inline-block;
   font-size: 4.3rem;
   font-family: 'Raleway', sans-serif;
@@ -117,9 +119,9 @@ background-color: #5FECFB;
 .underline-hr {
   border: 1.5px solid rgba(0,230,255,.99);
   border-radius: 0 50% 50% 0;
-  width: 150px;
+  width: 200px;
   position: absolute;
-  margin-top: -2rem;
+  margin-top: -3.5rem;
   margin-right: 200;
 }
 /* 'software engineer' title */
@@ -130,7 +132,7 @@ background-color: #5FECFB;
   font-size: 1.5rem;
   position: absolute;
   margin-top: -2rem;
-  margin-left: 165px;
+  margin-left: 25px;
   line-height: 0px;
 }
 /* begining subtitles */
@@ -142,8 +144,8 @@ background-color: #5FECFB;
   font-family: 'Archivo', sans-serif;
   font-size: 1rem;
   text-align: right;
-  left: 215px;
-  top: 180px;
+  left:85px;
+  top: 240px;
 }
 .titles-li {
  list-style: none;
@@ -285,8 +287,8 @@ nav li:nth-of-type(5){background-color: #0C1618}
   z-index: 99;
   position: absolute;
   display: block;
-  right: 11.4rem;
-  top: 20rem;
+  right: 7.2rem;
+  top: 25.2rem;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -516,7 +518,8 @@ font-family: 'Archivo', sans-serif;
 }
 .icons-container {
 position: relative;
-padding-top: -10px;
+padding-top: 0px;
+top: -.8em;
 padding-bottom: 30px;
 }
 .fab {
@@ -526,25 +529,26 @@ padding-bottom: 30px;
 }
 .icons {
   z-index: 99;
-  display: inline-flex;
+display: grid;
+ grid-template-columns: auto auto;
   color: #58DDF8;
   position: relative;
   width: 60px;
   height: 60px;
-  margin-top: 1.5rem;
-  margin-left: -2rem;
+  margin-left: -1.2rem;
 }
 .icons li {
   color: #58DDF8;
   z-index: 99;
   list-style: none;
-  width: 60px;
-  height: 65px;
-  margin: 0 10px;
+  width: 45px;
+  height: 45px;
+
+
 }
 
 
-/* __________________________________________________________________________Desktop Begin___________________________ */
+/* __________________________________________________________________________Desktop Begin___________________________*/
 @media only screen and (min-width: 768px) {
 .card {
   height: 310px;
@@ -927,13 +931,13 @@ font-family: 'Archivo', sans-serif;
 }
 
 .flask{
-  width: 60px;
+  width: 55px;
 }
 
 .icons-container {
 position: relative;
 display: flex;
-padding-top: -10px;
+padding-top: 30px;
 padding-bottom: 30px;
 }
 
@@ -941,7 +945,7 @@ padding-bottom: 30px;
 .fab {
   color: #eeeeee;
   z-index: 100;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .icons {
   z-index: 99;
@@ -951,8 +955,8 @@ padding-bottom: 30px;
   position: relative;
   width: 60px;
   height: 60px;
-  margin-top: -1rem;
-  margin-left: 3rem;
+  margin-top: -.5rem;
+  margin-left: 2rem;
 }
 
 .icons li {
