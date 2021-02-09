@@ -167,7 +167,7 @@ left: 50%;
   width: 1000px;
   height: 1000px;
 }
-ul {
+ul .port-btn-group{
     -moz-column-count: 2;
     -moz-column-gap: 5px;
     -webkit-column-count: 2;
@@ -176,7 +176,7 @@ ul {
     column-gap: 5px;
 }
 @media only screen and (min-width: 650px) {
-li {
+li .port-list-btn {
   display: flex-block;
 }
 .port-btn-container{
@@ -192,7 +192,7 @@ display: flex-block;
 }
 }
 @media only screen and (min-width: 995px) {
-ul {
+.port-btn-group {
     -moz-column-count: 4;
     -moz-column-gap: 5px;
     -webkit-column-count: 4;

@@ -9,10 +9,12 @@ box-sizing: border-box;
 }
 body {background-color: #5FECFB;font-size: 20px;color: #212529;height: 100%;position: relative;font-family: 'Archivo', sans-serif;}
 /* animated background */
-.main-container {min-height: 100vh; overflow: hidden;display: block;position: relative;padding-bottom: 120px; }
+.main-container {overflow: hidden;display: block;position: relative;padding-bottom: 120px; }
 .cover {background-color: rgba(1, 12, 14, 0.95);position: fixed;top: -50%;left: -50%;right: -50%;bottom: -50%;width: 200%;height: 200vh;z-index: -1;}
 .bg {position: fixed; z-index: -3; top: -50%; left: -50; right: -50%; bottom: -50%; width: 200%; height: 200vh; animation: cool-colors 80s infinite; background: rgb(0,230,255); background: -moz-radial-gradient(circle, rgba(0,230,255,1) 0%, rgba(12,22,24,1) 42%); background: -webkit-radial-gradient(circle, rgba(0,230,255,1) 0%, rgba(12,22,24,1) 42%);background: radial-gradient(circle, rgba(0,230,255,1) 0%, rgba(12,22,24,1) 42%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e6ff",endColorstr="#0c1618",GradientType=1); }
-
+.port-fix {
+height: 100%;
+}
 @keyframes cool-colors {
     0% { transform: translate(0,0) }
     10% { transform: translate(-5%,-5%) }
@@ -49,9 +51,9 @@ body {background-color: #5FECFB;font-size: 20px;color: #212529;height: 100%;posi
 
 /* targeting drop down menu's */
 html body nav.navbar.navbar-expand-lg.navbar-dark.cust-nav div.container-fluid div#navbarSupportedContent.collapse.navbar-collapse ul.navbar-nav.mr-auto.mb-2.mb-lg-0 li.nav-item.dropdown ul.dropdown-menu.show {
-background: hsla(190, 50%, 20%, 0.8);}
-.dropdown .dropdown-menu a { color: #eeeeee; }
-.dropdown .dropdown-menu a:hover {color: black; background-color: hsla(190, 86%, 50%, 0.9); border-color: #fff; }
+background: hsla(190, 50%, 20%, 0.85);}
+.dropdown .dropdown-menu a { color: #eeeeee; z-index: 99999; }
+.dropdown .dropdown-menu a:hover {color: black; background-color: hsla(190, 86%, 50%, 0.9); border-color: #fff; z-index: 99999; }
 
 /* body text begin */
 p {
@@ -1004,17 +1006,7 @@ width: 50%;
   padding: 10px;
 }
 }
-.port-iconify {
-color: #eeeeee;
-font-size: .75em;
-top: -54px;
-position: relative;
-}
-.port-iconify:hover {
-  color: rgba(0,230,255,1);
-  cursor: pointer;
-  margin: 0;
-}
+
 .services-header h2 {
 text-align: right;
 font-size: 1rem;
@@ -1049,8 +1041,12 @@ font-family: 'Archivo', sans-serif;
   overflow: hidden;
 }
 .services-img {
-height: 260px;
-width: 260px;
+height: 280px;
+width: 280px;
+}
+.about-img {
+height: 290px;
+width: 300px;
 border-radius: 30px;
 }
 @media only screen and (min-width: 650px) {
@@ -1100,9 +1096,9 @@ position: relative;
   grid-gap: 10px;
   margin: auto;
 position: relative;
-width: 350px;
+width: 310px;
 padding: 10px;
-top: -35.970em;
+top: -32em;
 }
 
 .under-portfolio {
@@ -1112,7 +1108,7 @@ top: -35.970em;
   grid-gap: 10px;
   margin: auto;
 position: relative;
-width: 350px;
+width: 310px;
 padding: 10px;
 }
 
