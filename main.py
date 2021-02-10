@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, flash, abort
+from flask import Flask, request, render_template, redirect, url_for, flash, abort
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
 from datetime import date
@@ -9,9 +9,19 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from flask_gravatar import Gravatar
 from functools import wraps
+import smtplib
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SENDER_EMAIL = os.environ.get('token2')
+RECEIVE_EMAIL = os.environ.get('token3')
+PASSWORD = os.environ.get('token4')
+GMAIL = "smtp.gmail.com"
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '5432205846687153cmlohr'
+app.config['SECRET_KEY'] = os.environ.get('token1')
 ckeditor = CKEditor(app)
 Bootstrap(app)
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False,
@@ -76,6 +86,7 @@ def admin_only(f):
 
     return decorated_function
 
+
 # need to fix the 400's________________________________________________________________________________
 # @app.errorhandler(404)
 # def page_not_found(e):
@@ -90,8 +101,7 @@ def admin_only(f):
 # @app.errorhandler(410)
 # def page_not_found(e):
 #     return render_template('410.html'), 410
-#
-#
+
 @app.route('/card')
 def card():
     return render_template("card.html", current_user=current_user)
@@ -196,7 +206,7 @@ def contact():
         name = request.form['name']
         email = request.form['email']
         msg = request.form['msg']
-        response = "Message sent!"
+        # response = "Message sent!"
         contents = f"Sender: {name}\nEmail: {email}\nMessage: {msg}"
         with smtplib.SMTP(GMAIL, port=587) as connect:
             connect.starttls()
