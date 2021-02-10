@@ -190,9 +190,24 @@ def about():
     return render_template("about.html", current_user=current_user)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("contact.html", current_user=current_user)
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        msg = request.form['msg']
+        response = "Message sent!"
+        contents = f"Sender: {name}\nEmail: {email}\nMessage: {msg}"
+        with smtplib.SMTP(GMAIL, port=587) as connect:
+            connect.starttls()
+            connect.login(user=SENDER_EMAIL, password=PASSWORD)
+            connect.sendmail(
+                from_addr=SENDER_EMAIL,
+                to_addrs=RECEIVE_EMAIL,
+                msg=f"Subject:MSG FROM BLOG!\n\n{contents}")
+        return render_template("contact.html", msg_sent=True, current_user=current_user)
+    else:
+        return render_template('contact.html', msg_sent=False, current_user=current_user)
 
 
 @app.route("/portfolio")
