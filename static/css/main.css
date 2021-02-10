@@ -9,7 +9,7 @@ box-sizing: border-box;
 }
 body {background-color: #5FECFB;font-size: 20px;color: #212529;height: 100%;position: relative;font-family: 'Archivo', sans-serif;}
 /* animated background */
-.main-container {overflow: hidden;display: block;position: relative;padding-bottom: 120px; }
+.main-container { height: 100%; overflow: hidden;display: block;position: relative;padding-bottom: 120px; }
 .cover {background-color: rgba(1, 12, 14, 0.95);position: fixed;top: -50%;left: -50%;right: -50%;bottom: -50%;width: 200%;height: 200vh;z-index: -1;}
 .bg {position: fixed; z-index: -3; top: -50%; left: -50; right: -50%; bottom: -50%; width: 200%; height: 200vh; animation: cool-colors 80s infinite; background: rgb(0,230,255); background: -moz-radial-gradient(circle, rgba(0,230,255,1) 0%, rgba(12,22,24,1) 42%); background: -webkit-radial-gradient(circle, rgba(0,230,255,1) 0%, rgba(12,22,24,1) 42%);background: radial-gradient(circle, rgba(0,230,255,1) 0%, rgba(12,22,24,1) 42%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e6ff",endColorstr="#0c1618",GradientType=1); }
 .port-fix {
@@ -338,10 +338,11 @@ header.masthead .post-heading .meta a {
 }
 
 .post-preview {
-padding-left: .5em;
+
 background-color: #0C1618;
 top: 20px;
-padding: .5em;
+width: 80%;
+margin: 10px;
 position: relative;
 border-left: 1px solid rgba(0,230,255,.95);
 border-bottom: 1px solid rgba(0,230,255,.95);
@@ -372,12 +373,19 @@ border-bottom: 1px solid rgba(0,230,255,.95);
 
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #212529;
+  color: red;
 }
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
   color: #0085A1;
+}
+.post-card {
+position: relative;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-icons {
 text-align: center;
@@ -402,11 +410,13 @@ margin-right: 2rem;
   cursor: pointer;
   margin-top: -2px;
 }
+
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
   }
 }
+
 .iconify {
 color: #eeeeee;
 font-size: 2rem;
@@ -531,6 +541,7 @@ margin-right: 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
+  margin: 20px;
   font-family: 'Archivo', sans-serif;
 }
 
@@ -542,6 +553,7 @@ margin-right: 2rem;
   color: #fff;
   background-color: rgba(0,230,255,.95) !important;
   border-color: rgba(0,230,255,.95) !important;
+
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;

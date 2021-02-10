@@ -21,12 +21,15 @@
         <div class="home"></div>
         <div class="bg"></div>
         <div class="cover"></div>
-        <div class="row">
-            <div class="blu-hr-one"></div>
-            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="blu-hr-header"></div>
+<!--            <div class="col-lg-8 col-md-10 mx-auto">-->
 <!--      blog code for cards, add img in future         -->
                 {% for post in all_posts %}
+            <div class="post-card">
                 <div class="post-preview">
+<!--                    <div class="post-thumb">-->
+<!--                        <image href="{{ post.img_url }}"></image>-->
+<!--                    </div>-->
                     <a href="{{ url_for('show_post', post_id=post.id) }}">
                         <h2 class="blog-title post-title">
                             {{post.title}}
@@ -44,18 +47,19 @@
                         {% endif %}
                     </p>
                 </div>
+            </div>
                 {% endfor %}
 
 
             <!-- New Post -->
             {% if current_user.id == 1: %}
-            <div class="clearfix">
-                <a class="btn btn-light float-right" href="{{url_for('add_new_post')}}">Create New Post</a>
+            <div class="contact-form-btn">
+                <a class="btn btn-light" href="{{url_for('add_new_post')}}">Create New Post</a>
             </div>
             {% endif %}
         </div>
-    </div>
-    </div>
+
+<!--    </div>-->
 </section>
 {% include "footer.html" %}
 {% endblock %}
